@@ -1,0 +1,165 @@
+/* 基本页面样式 */
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/* 主体内容容器 */
+.main-container {
+    padding: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* 帖子详情 */
+.post-detail {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.post-detail h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.post-detail p {
+    color: #666;
+    font-size: 14px;
+}
+
+.post-content {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #444;
+    line-height: 1.6;
+}
+
+/* 点赞和收藏按钮 */
+.button-group {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 20px;
+}
+
+.button-group form {
+    margin-right: 20px;
+}
+
+.button-group button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+.button-group button:disabled {
+    background-color: #ccc;
+}
+
+.button-group button i {
+    margin-right: 5px;
+}
+
+/* 点赞和收藏数显示 */
+.button-counts {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    margin-top: 15px;
+    color: #555;
+}
+
+.button-counts p {
+    margin: 0;
+}
+
+.button-counts i {
+    margin-right: 5px;
+}
+
+/* 评论区 */
+.comment {
+    margin-top: 15px;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.comment p {
+    margin: 0;
+    font-size: 14px;
+    color: #555;
+}
+
+.comment-time {
+    font-size: 12px;
+    color: #888;
+    margin-top: 5px;
+}
+
+/* 评论表单 */
+.comment-form {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.comment-form textarea {
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+    resize: vertical;
+    background-color: #f9f9f9;
+}
+
+.comment-form button {
+    padding: 12px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.comment-form button:hover {
+    background-color: #218838;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .button-group {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .button-group button {
+        margin-bottom: 10px;
+    }
+
+    .button-counts {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .button-counts p {
+        margin: 5px 0;
+    }
+}
